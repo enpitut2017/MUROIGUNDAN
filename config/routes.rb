@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'events/new'
+
   get 'static_pages/home'
   root 'static_pages#home'
 
