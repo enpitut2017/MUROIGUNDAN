@@ -9,10 +9,12 @@
 同じ境遇の先輩の生の声が聞ける機会を提供する機能が備わっています
 
 ## URL
-[サービスのURL](https://nomikai-app.herokuapp.com)
-* $CIのURL
-* $カンバンのURL
+* [サービスのURL](https://nomikai-app.herokuapp.com)
+* CIのURL
+* カンバンのURL
 ## メンバー
-[munema](https://github.com/munema)
-[hero-yuki](https://github.com/hero-yuki)
-[s1511409](https://github.com/s1511409)
+* [munema](https://github.com/munema)
+* [hero-yuki](https://github.com/hiro-yuki)
+* [s1511409](https://github.com/s1511409)
+* [yama3104](https://github.com/yama3104)
+* [pyst1g](https://github.com/pyst1g)
