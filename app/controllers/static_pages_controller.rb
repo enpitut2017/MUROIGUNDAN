@@ -3,6 +3,9 @@ class StaticPagesController < ApplicationController
   end
   
   def list 
+    #@title = "Events"
+    @datas = Event.all
+    
   end
 
 end
