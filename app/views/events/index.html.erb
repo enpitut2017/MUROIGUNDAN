@@ -9,10 +9,10 @@
         <nav>
         <ul class="nav navbar-nav navbar-right">
              <table>
-                <% @datas.each do |data| %>
+                <% @events.each do |event| %>
                 <tr>
                 <td>
-                    <%= data.name %>
+                    <li><%= link_to event.name,event_path(event.id)%></li>
                 </td>
                 </tr>
                 <% end %>
