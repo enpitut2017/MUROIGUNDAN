@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   get 'events/new'
   get 'static_pages/home'
   get '/list', to: 'static_pages#list'
