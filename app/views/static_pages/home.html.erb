@@ -13,22 +13,29 @@
              <li><%= link_to "ユーザ一覧",users_path%></li>
         </ul>
 	</nav>
-
-    <nav>
-    <ul class="nav navbar-nav navbar-right">
-         <table>
-            <% @events.each do |event| %>
-            <tr>
-            <td>
-                <li><%= link_to event.name,event_path(event.id)%></li>
-            </td>
-            </tr>
-            <% end %>
-        </table>
-    </ul>
-    </nav>
+	
 
       </div>
-
+	
+	<div class="panel panel-success">
+	  
+	  <div class="panel-heading">
+	    <h5 class="panel-title">イベント一覧</h5>
+	  </div>
+	  
+	  <div class="panel-body">
+            <table class="table">
+              <% @events.each do |event| %>
+              <tr>
+		<td>
+                  <li><%= link_to event.name,event_path(event.id)%></li>
+		</td>
+              </tr>
+              <% end %>
+            </table>
+	  </div>
+	  
+	</div>
+	
     </body>
 </html>
