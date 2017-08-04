@@ -4,9 +4,20 @@
     </head>
     
     <body>
-        <h1><%= @event.name %></h1>
-        <p>場所:<%= @event.place %></p>
-        <p>日付:<%= @event.month %>月<%= @event.day %>日</p>
+      <h1><%= @event.name %></h1>
+
+      <table class="table table-bordered">
+	<tbody>
+	  <tr>
+            <th>場所</th>
+	    <th><%= @event.place %></th>
+	  </tr>
+	  <tr>
+            <th>日付</th>
+	    <th><%= @event.month %>月<%= @event.day %>日</th>
+	  </tr>
+	</tbody>
+      </table>
     </body>
 </html>
 
