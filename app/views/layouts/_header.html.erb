@@ -2,8 +2,10 @@
   <div class="container">
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "My page",   '#' %></li>
-        <li><%= link_to "Log out", '#' %></li>
+        <li><%= link_to "My page",  root_path %></li>
+        <% if logged_in? %>
+           <li><%= link_to "Log out", logout_path, method: :delete %></li>
+        <% end %>
       </ul>
     </nav>
   </div>
