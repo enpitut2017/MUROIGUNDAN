@@ -22,9 +22,21 @@
   </div>
 
   <div class="field">
+    <%= f.label :password %>
+    <%= f.text_field :password %>
+  </div>
+
+  <div class="field">
     <%= f.label :cource %>
     <%= f.text_field :cource %>
   </div>
+  
+  <div class="field">
+    <%= f.label :student_id, "Student id" %>
+    <!--<p>STUDENT ID</p>-->
+    <%= f.number_field :student_id %>
+  </div>
+
 
   <div class="field">
     <%= f.label :student %>
