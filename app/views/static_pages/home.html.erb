@@ -1,3 +1,5 @@
+<% provide(:title, "Log in") %>
+<% if logged_in? %>
 <html>
     <head>
       <title> 飲み会 </title>
@@ -8,10 +10,12 @@
       <div class="center jumbotron">
         <h1>リク飲み for ITF</h1>
         <nav>
+          <% if false %>
         <ul class="nav navbar-nav navbar-right">
              <li><%= link_to "イベント一覧",events_path%></li>
              <li><%= link_to "ユーザ一覧",users_path%></li>
         </ul>
+        <% end %>
 	</nav>
 	
 
@@ -39,3 +43,33 @@
 	
     </body>
 </html>
+<% else %>
+  <html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>統一認証システム (Unified Authentication System)</title>
+  </head>
+  <body>
+
+        <h2>リク飲み　統一認証システム (Unified Authentication System)</h2>
+
+        <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <%= form_for(:session, url: login_path) do |f| %>
+          
+          <%= f.label :student_id, "Stundet id" %>
+          <%= f.number_field :student_id, class: 'form-control' %>
+
+          <%= f.label :password %>
+          <%= f.password_field :password, class: 'form-control' %>
+
+          <%= f.submit "Log in", class: "btn btn-primary" %>
+    <% end %>
+
+    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+  </div>
+</div>
+  </body>
+</head>
+
+<% end %>

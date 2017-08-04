@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       # ユーザーログイン後にユーザー情報のページにリダイレクトする
       #flash[:notice] = 'ログインできた'
       log_in user
-      redirect_to user
+      redirect_to root_path
       flash.now[:notice] = 'In'
     else
       # エラーメッセージを作成する
