@@ -1,24 +1,20 @@
-# README
+## ムロイ軍団 「リク飲み for ITF」
+## エレベーターピッチ
+“就活情報・就活実体を知りたい”を解決したい
+これから就活を始める筑波大生向けの
+筑波大生のOB・OGと直接会えるを実現する
+リク飲み for ITF です
+これは直接会って就活の情報を聞くことができ,
+みんなの就活日記と違って
+同じ境遇の先輩の生の声が聞ける機会を提供する機能が備わっています
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## URL
+* [サービスのURL](https://nomikai-app.herokuapp.com)
+* CIのURL
+* カンバンのURL
+## メンバー
+* [munema](https://github.com/munema)
+* [hero-yuki](https://github.com/hiro-yuki)
+* [s1511409](https://github.com/s1511409)
+* [yama3104](https://github.com/yama3104)
+* [pyst1g](https://github.com/pyst1g)
