@@ -1,16 +1,34 @@
 <html>
     <head>
-        <title> 飲み会 </title>
+      <title> 飲み会 </title>
+
     </head>
-    
+
     <body>
-        <h1>リク飲みforITF</h1>
+      <div class="center jumbotron">
+        <h1>リク飲み for ITF</h1>
         <nav>
         <ul class="nav navbar-nav navbar-right">
              <li><%= link_to "イベント一覧",events_path%></li>
              <li><%= link_to "ユーザ一覧",users_path%></li>
         </ul>
-</nav>
-        
+	</nav>
+
+    <nav>
+    <ul class="nav navbar-nav navbar-right">
+         <table>
+            <% @events.each do |event| %>
+            <tr>
+            <td>
+                <li><%= link_to event.name,event_path(event.id)%></li>
+            </td>
+            </tr>
+            <% end %>
+        </table>
+    </ul>
+    </nav>
+
+      </div>
+
     </body>
 </html>
