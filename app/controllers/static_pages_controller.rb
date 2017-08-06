@@ -4,8 +4,9 @@ class StaticPagesController < ApplicationController
 
       if params[:course].present?
         @events = @events.get_by_course params[:course]
-        #@events = Event.find(params[:course])
+        #w@events = Event.find(params[:course])
       end
+
   end
 
   def list

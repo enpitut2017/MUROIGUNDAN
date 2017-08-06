@@ -22,7 +22,7 @@
 		
       <div class="btn-group" role="group"> 
         <%= form_tag(root_path, method: "get") do %>
-        <%= label_tag :course, "分類" %>
+        <%= label_tag :course, "絞り込み" %>
         <%= select_tag :course, options_for_select(Event.courses), include_blank: true %>
         <%= submit_tag "検索" %>
         <% end %>
