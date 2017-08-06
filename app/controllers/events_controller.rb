@@ -2,11 +2,11 @@ class EventsController < ApplicationController
   before_action :set_event, only: [:show]
   
   def index 
-    @events = Event.all
-    if params[:course].present?
-      @events = @events.get_by_course params[:course]
+    #@events = Event.all
+    #if params[:course].present?
+      #@events = @events.get_by_course params[:course]
       #@events = Event.find(params[:course])
-    end
+    #end
   end
   
   def new
