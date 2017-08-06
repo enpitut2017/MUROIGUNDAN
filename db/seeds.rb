@@ -40,5 +40,7 @@ User.create!(name:  "Example User",
 users = User.all
 user  = users.first
 events = Event.all
-following = events[1..4]
-following.each { |followed| user.follow(followed) }
+#following = events[1..4]
+#following.each { |followed| user.follow(followed) }
+user.follow(events.find(1))
+user.follow(events.find(3))

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'sessions/new'
 
-  resources :users
+  #resources :users
   get 'events/new'
   get 'static_pages/home'
   get '/list', to: 'static_pages#list'
@@ -13,5 +13,11 @@ Rails.application.routes.draw do
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
   resources :events
+  
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

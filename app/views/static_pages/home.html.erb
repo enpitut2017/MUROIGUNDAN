@@ -1,5 +1,6 @@
 <% provide(:title, "Log in") %>
 <% if logged_in? %>
+<% @user ||= current_user %>
 <html>
     <head>
       <title> 飲み会 </title>
@@ -39,7 +40,8 @@
               <% @events.each do |event| %>
               <tr>
 		<td>
-                  <li><%= link_to event.name,event_path(event.id)%> <%= event.course %></li> 
+                  <li><%= link_to event.name,event_path(event.id)%> <%= event.course %>
+                  <% if @user.following?(event) %>参加中<% end %></li> 
 		</td>
               </tr>
               <% end %>
