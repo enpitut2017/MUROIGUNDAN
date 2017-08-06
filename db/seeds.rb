@@ -37,14 +37,14 @@ User.create!(name:  "Example User",
              password:              "foobar",
              student_id: 111,
              student:     true,
-             course: "coins")
+             course: 2)
 # ユーザー2
 User.create!(name:  "Example User2",
              email: "example2@railstutorial.org",
              password:              "hoobar",
              student_id: 222,
              student:     true,
-             course: "coins")
+             course: 1)
 
              
 # リレーションシップ

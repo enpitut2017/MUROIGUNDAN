@@ -32,7 +32,8 @@
 
   <div class="field">
     <%= f.label :course %>
-    <%= f.text_field :course %>
+    <!--<%= f.text_field :course %>-->
+    <%= select_tag :course, options_for_select(User.courses), include_blank: true %>
   </div>
   
   <div class="field">

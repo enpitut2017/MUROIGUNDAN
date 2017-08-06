@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+    enum course: { "理系": 0, "文系": 1, "coins": 2 }
+  
     has_secure_password
     has_many :events, dependent: :destroy
     has_many :active_relationships, class_name:  "Relationship",
