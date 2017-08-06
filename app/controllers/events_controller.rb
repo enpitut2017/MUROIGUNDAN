@@ -3,6 +3,10 @@ class EventsController < ApplicationController
   
   def index 
     @events = Event.all
+    if params[:course].present?
+      @events = @events.get_by_course params[:course]
+      #@events = Event.find(params[:course])
+    end
   end
   
   def new

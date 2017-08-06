@@ -6,19 +6,25 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Event.create(name: 'event1',
-             place: 'AAA',
+Event.create(name: '焼肉',
+             place: '牛角つくば駅前店',
              month: 1,
-               day: 1)
-Event.create(name: 'event2',
-             place: 'BBB',
+               day: 1,
+            course: 0)
+Event.create(name: 'サイゼイア',
+             place: '研究学園駅前店',
              month: 2,
-               day: 2)
-Event.create(name: 'event3',
-             place: 'CCC',
+               day: 2,
+               course: 1)
+Event.create(name: 'バーミアン',
+             place: '大学会館店',
              month: 3,
-               day: 3)
-Event.create(name: 'event4',
-             place: 'DDD',
+               day: 3,
+               course: 0)
+Event.create(name: 'くらくら寿司',
+             place: '平砂店',
              month: 4,
-               day: 4)
+               day: 4,
+               course:1)
+               
+
