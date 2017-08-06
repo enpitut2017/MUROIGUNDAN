@@ -26,5 +26,19 @@ Event.create(name: 'くらくら寿司',
              month: 4,
                day: 4,
                course:1)
-               
+            
 
+# ユーザー
+User.create!(name:  "Example User",
+             email: "example@railstutorial.org",
+             password:              "foobar",
+             student_id: 111,
+             student:     true,
+             course: "coins")
+             
+# リレーションシップ
+users = User.all
+user  = users.first
+events = Event.all
+following = events[1..4]
+following.each { |followed| user.follow(followed) }
