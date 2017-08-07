@@ -15,12 +15,37 @@
 	  </tr>
 	  <tr>
             <th>日付</th>
-	    <th><%= @event.month %>月<%= @event.day %>日</th>
+            <th><%= @event.begin_time.month%>月<%= @event.begin_time.day %>日</th>
 	  </tr>
+	  <tr>
+	      <th>時間</th>
+	      <th><%= @event.begin_time.to_s(:time) %>〜<%= @event.end_time.to_s(:time) %></th>
+	      </tr>
 	  <tr>
 	      <th>分類</th>
 	      <th><%= @event.course %></th>
 	      </tr>
+	   <tr>
+	      <th>受付状況</th>
+	      <th>
+	          <% if @event.begin_time > Time.now  %>
+	              受付中
+	          <% else %>
+	              終了
+	          <% end %>
+	      </th>
+	      </tr>
+	    <tr>
+	      <th>料金</th>
+	      <th><%= @event.fee %>円
+	      </th>
+	    </tr>
+	    <tr>
+	      <th>説明</th>
+	      <th><%= @event.explain %>
+	      </th>
+	    </tr>
+	      
 	</tbody>
     </table>
     
