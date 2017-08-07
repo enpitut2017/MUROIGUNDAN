@@ -39,16 +39,11 @@
             <table class="table-bordered">
 	      <tbody>
                <% @events.each do |event| %>
-              <tr>
-		<td>
-                  <h1><%= link_to event.name,event_path(event.id)%> <%= event.course %>
-                  <% if @user.following?(event) %>参加中<% end %></h1> 
-		</td>
-		<td>
-                  <h1><%= link_to event.name,event_path(event.id)%> <%= event.course %>
-                    <% if @user.following?(event) %>参加中<% end %></h1> 
-		</td>
-              </tr>
+            
+                  <div class="col-sm-6"><%= link_to event.name,event_path(event.id)%> <%= event.course %>
+                    <% if @user.following?(event) %>参加中<% end %></div>
+		 
+	
               <% end %>
 	      </tbody>
             </table>
