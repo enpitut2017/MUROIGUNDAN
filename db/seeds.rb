@@ -10,26 +10,34 @@
 Event.create(name: '焼肉',
              place: '牛角つくば駅前店',
             course: 0,
-        begin_time: '02 Sep 2017 19:00:00' ,
-          end_time: '02 Sep 2017 21:00:00')
+        begin_time: '02 Sep 2017 19:00:00',
+          end_time: '02 Sep 2017 21:00:00',
+               fee: 2500,
+           explain: "焼肉だよ〜")
 # イベント2
 Event.create(name: 'イタリアン',
              place: 'サイゼイア研究学園駅前店',
             course: 1,
-        begin_time: '10 May 2017 18:00:00' ,
-          end_time: '10 May 2017 20:00:00')
+        begin_time: '10 May 2017 18:00:00',
+          end_time: '10 May 2017 20:00:00',
+               fee: 1200,
+           explain: "パスタだよ〜")
 #イベント3
 Event.create(name: '中華',
              place: 'バーミアン大学会館店',
             course: 0,
-        begin_time: '25 Dec 2017 21:00:00' ,
-          end_time: '25 Dec 2017 23:00:00')
+        begin_time: '25 Dec 2017 21:00:00',
+          end_time: '25 Dec 2017 23:00:00',
+               fee: 1500,
+           explain: "中華だよ〜")
 #イベント4
 Event.create(name: '寿司',
              place: 'くらくら寿司平砂店',
             course:1,
-        begin_time: '21 Nov 2017 17:00:00' ,
-          end_time: '21 Nov 2017 20:00:00')
+        begin_time: '21 Nov 2017 17:00:00',
+          end_time: '21 Nov 2017 20:00:00',
+               fee: 1500,
+           explain: "寿司だよ〜")
 
 # ユーザー1
 User.create!(name:  "Example User1",
