@@ -17,33 +17,38 @@
 
   <div class="field">
     <%= f.label :name %>
+    <br>
     <%= f.text_field :name %>
   </div>
 
   <div class="field">
     <%= f.label :email %>
+    <br>
     <%= f.text_field :email %>
   </div>
 
   <div class="field">
     <%= f.label :password %>
+    <br>
     <%= f.password_field :password %>
   </div>
 
   <div class="field">
     <%= f.label :course %>
-    <!--<%= f.text_field :course %>-->
+    <br>
     <%= select_tag :course, options_for_select(User.courses), include_blank: true %>
   </div>
   
   <div class="field">
     <%= f.label :student_id, "Student id" %>
+    <br>
     <%= f.number_field :student_id %>
   </div>
 
 
   <div class="field">
     <%= f.label :student %>
+    <br>
     <%= f.check_box :student %>
   </div>
 
