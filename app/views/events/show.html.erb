@@ -10,23 +10,23 @@
       <table class="table table-bordered">
 	<tbody>
 	  <tr>
-            <th>場所</th>
+            <th bgcolor="#90ee90">場所</th>
 	    <th><%= @event.place %></th>
 	  </tr>
 	  <tr>
-            <th>日付</th>
+            <th bgcolor="#90ee90">日付</th>
             <th><%= @event.begin_time.month%>月<%= @event.begin_time.day %>日</th>
 	  </tr>
 	  <tr>
-	      <th>時間</th>
+	      <th bgcolor="#90ee90">時間</th>
 	      <th><%= @event.begin_time.to_s(:time) %>〜<%= @event.end_time.to_s(:time) %></th>
 	      </tr>
 	  <tr>
-	      <th>分類</th>
+	      <th bgcolor="#90ee90">分類</th>
 	      <th><%= @event.course %></th>
 	      </tr>
 	   <tr>
-	      <th>受付状況</th>
+	      <th bgcolor="#90ee90">受付状況</th>
 	      <th>
 	          <% if @event.begin_time > Time.now  %>
 	              受付中
@@ -36,12 +36,12 @@
 	      </th>
 	      </tr>
 	    <tr>
-	      <th>料金</th>
+	      <th bgcolor="#90ee90">料金</th>
 	      <th><%= @event.fee %>円
 	      </th>
 	    </tr>
-	    <tr>
-	      <th>説明</th>
+	    <tr height="200">
+	      <th bgcolor="#90ee90">説明</th>
 	      <th><%= @event.explain %>
 	      </th>
 	    </tr>
