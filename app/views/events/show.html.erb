@@ -22,7 +22,10 @@
 	      <th><%= @event.course %></th>
 	      </tr>
 	</tbody>
-      </table>
+    </table>
+    
+    <p><%= link_to "参加者一覧", edit_event_path(@event) %></p>
+      
     <div class="col-md-8">  
         <%= render 'follow_form'%>
     </div>

@@ -3,7 +3,10 @@
 
 <%= form_for(current_user.active_relationships.find_by(followed_id: @event.id),
              html: { method: :delete }) do |f| %>
-  <%= f.submit "取り消し", class: "btn" %>
+  <%= f.submit "取り消し", class: "btn", data: { confirm: "本当に参加を取り消してもよろしいですか?",
+                                                  commit: "取り消す",
+                                                  cancel:"やっぱりやめる"},
+                                                  title: "確認"%>
 <% end %>
 
   </div>
