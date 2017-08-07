@@ -1,33 +1,36 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+<div class="namea"><%= @user.name %></div>
+<div class="nameb">さんのユーザー情報</div>
 
-<p><strong>Password:</strong>
-  <%= @user.password %>
-</p>
+<table border="1" class="mytable">
+  <tr>
+  <th scope="row"><strong>Email:</strong></th>
+  <td><%= @user.email %></td>
+  </tr>
 
-<p>
-  <strong>Course:</strong>
-  <%= @user.course %>
-</p>
+  <tr>
+   <th scope="row"><strong>Course:</strong></th>
+   <td><%= @user.course %></td>
+  </tr>
 
-<p>
-  <strong>Student ID:</strong>
-  <%= @user.student_id %>
-</p>
+  <tr>
+    <th scope="row"><strong>学籍番号:</strong></th>
+    <td><%= @user.student_id %></td>
+  </tr>
 
-<p>
-  <strong>Student:</strong>
-  <%= @user.student %>
-</p>
+  <tr>
+    <th scope="row"><strong>区分:</strong></th>
+    <% if  @user.student %>
+    <td>学生</td>
+    <% else %>
+    <td>卒業生</td>
+    <% end %>
+  </tr>  
+</table>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+     <%= link_to 'Back', users_path %>
+<br></br>
+     <%= image_tag("beer.jpg") %>

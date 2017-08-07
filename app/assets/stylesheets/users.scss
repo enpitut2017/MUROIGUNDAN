@@ -1,3 +1,23 @@
-// Place all the styles related to the Users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+div.namea{
+    color: #2c27d6;
+    font-size: 25px;
+    float: left;
+}
+div.nameb{
+    font-size: 25px;
+}
+table th{
+    background: #00fff2;
+}
+
+table td{
+    background: #dcdfe0;
+}
+
+table th,td{
+    font-size: 15px;
+}
+table{
+    margin-top: 5px;
+    width:70%;
+}
