@@ -52,7 +52,7 @@
 		<br><span class="label label-danger"><%= event.course %></span></br>
 		<% else %>
 		<br><span class="label label-info"><%= event.course %></span></br><% end %>
-		<%= event.month %>月<%= event.day %>日
+		<%= event.begin_time.month %>月<%= event.begin_time.day %>日
                 <% if @user.following?(event) %><br><span class="label label-success">参加中</span></br>
 		<% else %><br></br><% end %>
 		</div>
