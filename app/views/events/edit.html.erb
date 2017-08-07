@@ -1,13 +1,26 @@
 <p>参加人数：<%= @event.followers.count %>人</p>
     
-    <div class="panel-body">
-        <table class="table">
-              <% @event.followers.each do |u| %>
-              <tr>
-		      <td>
-                  <li><%= u.name %></li> 
-		      </td>
-              </tr>
-              <% end %>
-        </table>
-	</div>
+<div class="panel-body">
+  <table class="table table-bordered">
+    <thead bgcolor="#bde9ba">
+      <tr>
+	<th>名前</th>
+	<th>所属</th>
+	<th>学生</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @event.followers.each do |u| %>
+      <tr>
+        <td><%= u.name %></td>
+	<td><%= u.course %></td>
+	<% if (u.student == true) %>
+	<td> o </td>
+	<% else %>
+	<td> x </td>
+	<% end %>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
