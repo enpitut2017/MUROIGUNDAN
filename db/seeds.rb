@@ -1,3 +1,4 @@
+# coding: utf-8
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
@@ -25,7 +26,7 @@ Event.create(name: 'バーミアン',
                day: 3,
                course: 0)
 #イベント4
-Event.create(name: 'くらくら寿司',
+Event.create(name: 'くらくらくらくら寿司',
              place: '平砂店',
              month: 4,
                day: 4,
