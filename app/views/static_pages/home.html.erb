@@ -38,7 +38,7 @@
 	  <div class="panel-body">
             <table class="table-bordered">
 	      <tbody>
-              <% @events.each do |event| %>
+               <% @events.each do |event| %>
               <tr>
 		<td>
                   <h1><%= link_to event.name,event_path(event.id)%> <%= event.course %>
@@ -50,6 +50,7 @@
 		</td>
               </tr>
               <% end %>
+	      </tbody>
             </table>
 	  </div>
 	  
