@@ -14,39 +14,60 @@ Event.create(name: '焼肉',
                day: 1,
             course: 0)
 # イベント2
-Event.create(name: 'サイゼイア',
-             place: '研究学園駅前店',
+Event.create(name: 'イタリアン',
+             place: 'サイゼイア研究学園駅前店',
              month: 2,
                day: 2,
                course: 1)
 #イベント3
-Event.create(name: 'バーミアン',
-             place: '大学会館店',
+Event.create(name: '中華',
+             place: 'バーミアン大学会館店',
              month: 3,
                day: 3,
                course: 0)
 #イベント4
-Event.create(name: 'くらくらくらくら寿司',
-             place: '平砂店',
+
+Event.create(name: '寿司',
+             place: 'くらくら寿司平砂店',
              month: 4,
                day: 4,
                course:1)
 
 # ユーザー1
-User.create!(name:  "Example User",
+User.create!(name:  "Example User1",
              email: "example@railstutorial.org",
-             password:              "foobar",
-             student_id: 111,
+             password:              "a",
+             student_id: 1,
              student:     true,
              course: 2)
 # ユーザー2
 User.create!(name:  "Example User2",
              email: "example2@railstutorial.org",
-             password:              "hoobar",
-             student_id: 222,
+             password:              "b",
+             student_id: 2,
              student:     true,
              course: 1)
-
+# ユーザー3
+User.create!(name:  "Example User3",
+             email: "example2@railstutorial.org",
+             password:              "c",
+             student_id: 3,
+             student:     true,
+             course: 1)
+# ユーザー4
+User.create!(name:  "Example User4",
+             email: "example2@railstutorial.org",
+             password:              "d",
+             student_id: 4,
+             student:     true,
+             course: 1)
+# ユーザー5
+User.create!(name:  "Example User5",
+             email: "example2@railstutorial.org",
+             password:              "e",
+             student_id: 5,
+             student:     true,
+             course: 1)
              
 # リレーションシップ
 users = User.all
@@ -60,3 +81,10 @@ users.find(1).follow(events.find(3))
 #ユーザ2はイベント2, 4をフォロー
 users.find(2).follow(events.find(2))
 users.find(2).follow(events.find(4))
+#ユーザ3はイベント1をフォロー
+users.find(3).follow(events.find(1))
+#ユーザ4はイベント1をフォロー
+users.find(4).follow(events.find(1))
+#ユーザ5はイベント1をフォロー
+users.find(5).follow(events.find(1))
+

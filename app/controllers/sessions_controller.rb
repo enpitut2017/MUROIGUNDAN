@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
       flash.now[:notice] = 'In'
     else
       # エラーメッセージを作成する
-      flash.now[:danger] = 'error'
+      flash.now[:danger] = 'Invalid Stundet id / Password combination'
       render 'new'
     end
   end

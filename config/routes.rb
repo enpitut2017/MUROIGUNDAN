@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'static_pages/home'
   get '/list', to: 'static_pages#list'
   get '/signup', to: 'users#new'
-  #get '/events', to: 'events#index'
+  #get '/events', to: 'events#show_members'
 #  root 'events#new'
   root 'static_pages#home'
   get    '/login',   to: 'sessions#new'
