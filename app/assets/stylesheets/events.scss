@@ -1,3 +1,22 @@
 // Place all the styles related to the Events controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+div.name{
+    //text-align: left;
+    float: left;
+    font-size: 14px;
+    color:#FFF;
+}
+
+div.menu{
+    //display:inline;
+    //text-align: right;
+    float: right;
+    margin-right: 20px;
+    font-size: 14px;
+    color:#FFF;
+
+}
